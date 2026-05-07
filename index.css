@@ -1,0 +1,60 @@
+@charset "UTF-8";
+body {
+    margin: 3%;
+    background-color: rgb(223, 242, 251);
+}
+h1 {
+    text-align: center;
+    width: 95%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+p {
+    text-align: center;
+    width: 95%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: aliceblue;
+    color: black;
+    font-size: larger;
+    border: solid 1px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.5);
+}
+/* ヘルプボタンのスタイル */
+.help-floating-button {
+    /* 位置の固定 */
+    position: fixed;
+    top: 20px;
+    right: 60px;  
+    z-index: 1000; /* 他の要素より上に表示 */
+
+    /* ボタン（丸、色、大きさ） */
+    background-color: #007bff;
+    color: white;  
+    border-radius: 10px; 
+    
+    /* 文字の配置（中央寄せ） */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4em 1em;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none; /* 下線を消す */
+
+    /* 影をつけて立体感を出す */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    
+    /* マウスホップ時のアニメーション */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+/* マウスを乗せた時の動き */
+.help-floating-button:hover {
+    background-color: #0056b3; /* 少し濃い青に */
+    transform: scale(1.1);    /* 少し大きくする */
+}

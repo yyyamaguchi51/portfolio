@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* 基本設定 */
+body {
+    margin: 3%;
+    background-color: #f0f8ff;
+}
+
+/* 全体を囲うコンテナ */
+.main-container {
+    text-align: center;
+    width: 95%;
+    max-width: 600px; 
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f0f8ff;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+h2 {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* --- 入力画面用 (既存のスタイル) --- */
+table.info {
+    width: 100%;
+    margin-bottom: 20px;
+}
+table.info th {
+    text-align: right;
+    padding: 10px;
+    width: 150px;
+}
+table.info td {
+    border: 1px solid gray;
+    border-radius: 8px;
+    text-align: left;
+    padding: 10px;  
+}
+
+/* --- 管理画面・一覧用 (ここが重要！) --- */
+.force-center {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse !important; /* 線を一本にする */
+    background-color: #f0f8ff;
+    border: 1px solid #f0f8ff;
+}
+
+/* 氏名・生年月日などのセル(td)と見出し(th)に線を引く */
+.force-center th, 
+.force-center td {
+    border: 1px solid #ccc !important; /* ここで線を強制表示 */
+    padding: 12px;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+.force-center th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* 入力要素 */
+input[type="text"],
+input[type="date"],
+select.option {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #f4f4f4;
+}
+
+.input-staff-c {
+    width: 100px;
+    text-align: center;
+}
+
+/* ボタン */
+.btn, input[type="submit"] {
+    font-size: 16px;
+    border: 1px solid darkgrey;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.btn:hover, input[type="submit"]:hover {
+    background-color: #e6e6e6;
+}
